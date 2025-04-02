@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="./style/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        /* @theme {
+          --color-clifford: #da373d;
+        } */
+      </style>
 </head>
 <body>
-    <navbar>
-        <h1>Mero Cart</h1>
-        <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </navbar>
+    <div class="container mx-auto">
+        <nav>
+            <h1 class="text-2xl font-bold">Mero Cart</h1>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <!-- hero section starts -->
+        <div class="hero flex flex-col items-center justify-center gap-4">
+            <h1 class="text-5xl font-bold">Shop Smart, Live Better</h1>
+            <p class="text-xl">Discover Deals You Will Love!</p>
+            <button class="primary-button">Explore</button>
+        </div>
+
+
+        <!-- products -->
+        <div id="products"></div>
+
+    </div>
+
+    <script src="./script/index.js"></script>
     
 </body>
 </html>
